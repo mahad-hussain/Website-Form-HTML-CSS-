@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+  <h1>Survey Form</h1>
+    <div class="container">
+      <h2 id="sub-header">
+        Please answer all questions to the best of your ability
+      </h2>
+
+      <form class="my-form">
+        <div class="form-group">
+          <label>Name:</label>
+          <input type="text" name="name" placeholder="Enter name here..." required />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input type="email" placeholder="Enter email here..." required />
+        </div>
+        <div class="form-group">
+          <label>Age(optional):</label>
+          <input type="number" name="age" placeholder="age..." min="10" max="99" />
+        </div>
+        <div class="form-group">
+          <label>Date:</label>
+          <input type="date" required />
+        </div>
+
+        <div class="form-group">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label"
+              >How are you feeling?</label
+            >
+          </div>
+          <div class="fields">
+            <select name="feeling" id="dropdown" class="dropdown">
+              <option value="great">great</option>
+              <option value="good">good</option>
+              <option value="decent">decent</option>
+              <option value="bad">bad</option>
+              <option value="terrible">terrible</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label"
+              >Are you currently studying at a univirsity?</label
+            >
+          </div>
+          
+          <div class="fields">
+            <select name="yorn" id="dropdown" class="dropdown" required>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="labels">
+            <label for="dropdown" id="dropdown-label"
+              >Are you studying at a univirsity in Ontario?</label>
+          </div>
+          <div class="fields">
+            <select name="y-or-n" id="dropdown" class="dropdown" required>
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="labels">
+            <label for="universities"
+              >If yes, which university are you attending?</label>
+          </div>
+          <div class="fields">
+            <ul id="universities" style="list-style: none">
+              <li class="radio">
+                <label>
+                  University of Toronto
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="1"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Ontario Tech University
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="2"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Toronto Metropolitan University
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="3"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  McMaster University
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="4"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  University of Waterloo
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="5"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Other
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="6"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  N/A
+                  <input
+                    name="time-radio"
+                    type="radio"
+                    value="7"
+                    class="user-selection"
+                  />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>What is you program of study:</label>
+          <input type="text" name="program" placeholder="Enter program here..."/>
+        </div>
+
+        <div class="form-group">
+          <div class="labels">
+            <label for="feelings">
+              How are you finding your program?
+              <br />
+              (Select all that apply)
+            </label>
+          </div>
+          <div class="fields">
+            <ul id="feelings" style="list-style: none">
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="1"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Easy
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="2"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Difficult
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="3"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Fun
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="4"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Boring
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="5"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Interesting
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="6"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Terrible
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  <input
+                    name="feeling-check"
+                    value="5"
+                    type="checkbox"
+                    class="user-selection"
+                  />
+                  Amazing
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="text"
+            >Did you like the survey? Please provide feedback:</label
+          >
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="1"
+            placeholder="Enter your expirence here..."
+          ></textarea>
+        </div>
+
+        <!--a class="button" id="submit" type="submit" href="/form/test.html">Submit</a> -->
+        <button class="button" id="submit" type="submit">Submit</button>
+
+      </form>
+    </div>
+
+    <footer id="main-footer">
+        <p>Copyright &copy; 2022 My Survey Form</p>
+      </footer>
+
+  </body>
+</html>
